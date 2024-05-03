@@ -1,0 +1,56 @@
+{
+  "factory_Name": "瑞原",
+  "cam": [
+    {
+      "camid": "5041521402",
+      "cam_num":"03040708",
+      "channel":4,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.01,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5041521403",
+      "cam_num":"09101314",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.01,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5041521403",
+      "cam_num":"09101314",
+      "channel":3,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.01,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

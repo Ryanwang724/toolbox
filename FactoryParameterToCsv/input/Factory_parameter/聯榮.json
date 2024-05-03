@@ -1,0 +1,39 @@
+{
+    "factory_Name": "聯榮",
+    "cam": [
+        {
+            "camid": "5072141801",
+            "cam_num":"01020304",
+            "channel":4,
+            "type": "00",
+            "bypass":false,
+            "normalize":false,
+            "change_model_para":false,
+            "area_threshold":0,
+            "time_threshold":0,
+            "window_length":300,
+            "probability_threshold":10,
+            "do_saturation":false,
+            "saturation_threshold":170,
+            "do_brightness":false,
+            "brightness_threshold":45
+        },        
+        {
+            "camid": "5072141805",
+            "cam_num":"17181920",
+            "channel":3,
+            "type": "00",
+            "bypass":false,
+            "normalize":false,
+            "change_model_para":false,
+            "area_threshold":0,
+            "time_threshold":0,
+            "window_length":300,
+            "probability_threshold":10,
+            "do_saturation":false,
+            "saturation_threshold":170,
+            "do_brightness":false,
+            "brightness_threshold":45
+        }
+    ]
+}

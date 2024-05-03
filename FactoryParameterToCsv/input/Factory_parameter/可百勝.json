@@ -1,0 +1,22 @@
+{
+  "factory_Name": "可百勝",
+  "cam": [
+    {
+      "camid": "5041527102",
+      "cam_num":"05060708",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.022,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":true,
+      "saturation_threshold":100,
+      "do_brightness":true,
+      "brightness_threshold":45
+    }
+  ]
+}

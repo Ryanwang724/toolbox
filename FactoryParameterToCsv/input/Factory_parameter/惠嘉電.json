@@ -1,0 +1,73 @@
+{
+  "factory_Name": "惠嘉電",
+  "cam": [
+    {
+      "camid": "5041528203",
+      "cam_num":"A09A10A13A14",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.007,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5041528203",
+      "cam_num":"A09A10A13A14",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.015,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5041528204",
+      "cam_num":"A11A12A15A16",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.015,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5041528204",
+      "cam_num":"A11A12A15A16",
+      "channel":3,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.015,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

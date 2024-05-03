@@ -1,0 +1,39 @@
+{
+  "factory_Name": "大東方",
+  "cam": [
+    {
+      "camid": "5005198304",
+      "cam_num":"13141516",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5005198303",
+      "cam_num":"09101112",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":true,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":200,
+      "probability_threshold":30,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

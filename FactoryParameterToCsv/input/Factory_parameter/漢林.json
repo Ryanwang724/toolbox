@@ -1,0 +1,56 @@
+{
+  "factory_Name": "漢林",
+  "cam": [
+    {
+      "camid": "5071900702",
+      "cam_num":"CH21CH22CH23CH24",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5071900702",
+      "cam_num":"CH21CH22CH23CH24",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5071900714",
+      "cam_num":"CH13CH14CH15CH16",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

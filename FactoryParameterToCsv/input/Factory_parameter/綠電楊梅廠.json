@@ -1,0 +1,56 @@
+{
+  "factory_Name": "綠電",
+  "cam": [
+    {
+      "camid": "5004517211",
+      "cam_num":"17181920",
+      "channel":2,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.0075,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5004517211",
+      "cam_num":"17181920",
+      "channel":4,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.0075,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5004517214",
+      "cam_num":"29303132",
+      "channel":4,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0.0075,
+      "time_threshold":60,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

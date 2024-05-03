@@ -1,0 +1,56 @@
+{
+  "factory_Name": "綠環境",
+  "cam": [
+    {
+      "camid": "5005056005",
+      "cam_num":"B5",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":true,
+      "change_model_para":true,
+      "area_threshold":1,
+      "time_threshold":1,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":true,
+      "saturation_threshold":50,
+      "do_brightness":true,
+      "brightness_threshold":125
+    },
+    {
+      "camid": "5005056017",
+      "cam_num":"A15",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":true,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5005056001",
+      "cam_num":"B1",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":true,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

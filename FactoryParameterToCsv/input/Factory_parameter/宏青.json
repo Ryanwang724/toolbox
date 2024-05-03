@@ -1,0 +1,39 @@
+{
+  "factory_Name": "宏青",
+  "cam": [
+    {
+      "camid": "5071922112",
+      "cam_num":"B05B06B07B08",
+      "channel":1,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    },
+    {
+      "camid": "5071922112",
+      "cam_num":"B05B06B07B08",
+      "channel":3,
+      "type": "00",
+      "bypass":false,
+      "normalize":false,
+      "change_model_para":false,
+      "area_threshold":0,
+      "time_threshold":0,
+      "window_length":300,
+      "probability_threshold":10,
+      "do_saturation":false,
+      "saturation_threshold":170,
+      "do_brightness":false,
+      "brightness_threshold":45
+    }
+  ]
+}

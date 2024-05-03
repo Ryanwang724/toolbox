@@ -1,0 +1,27 @@
+{
+    "is_split": true,
+    "channel": [
+        2
+    ],
+    "roi_data": {
+        "channel1": [],
+        "channel2": [
+            [
+                [
+                    5,
+                    9
+                ],
+                [
+                    348,
+                    64
+                ],
+                [
+                    350,
+                    4
+                ]
+            ]
+        ],
+        "channel3": [],
+        "channel4": []
+    }
+}
