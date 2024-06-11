@@ -4,8 +4,9 @@ import csv
 
 class ReadFactoryParameter:
     def __init__(self):
-        self.input_path = './input/Factory_parameter'
-        self.output_path = './output'
+        self.this_file_dir = os.path.dirname(os.path.abspath(__file__))
+        self.input_path = os.path.join(self.this_file_dir, 'input', 'Factory_parameter')
+        self.output_path = os.path.join(self.this_file_dir, 'output')
         self.save_data = list()
 
     def load_all_file(self, fileExt: str):
@@ -24,7 +25,8 @@ class ReadFactoryParameter:
                 'do_saturation', 'saturation_threshold', 'do_brightness', 'brightness_threshold']
 
     def write_csv(self, data: list, mode: str):
-        with open(self.output_path+'/result.csv', mode, encoding='utf-8-sig', newline='') as csvfile:
+        file_path = os.path.join(self.output_path, 'result.csv')
+        with open(file_path, mode, encoding='utf-8-sig', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(data)
 
@@ -38,7 +40,8 @@ class ReadFactoryParameter:
         self.write_csv(title,'w')  # 寫入標題欄位
 
         for file in all_file_list:
-            with open(self.input_path+f'/{file}','r',encoding='utf-8') as f:
+            file_path = os.path.join(self.input_path, file)
+            with open(file_path,'r',encoding='utf-8') as f:
                 json_file = json.load(f)
                 for cam_ in json_file.get('cam'): # 個別的相機
                     temp_list = []
