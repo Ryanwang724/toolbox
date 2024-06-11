@@ -1,2 +1,5 @@
 **/__pycache__
 **/Thumbs.db
+RoiDisplay/input/roi_from_url/
+RoiDisplay/output/
+RoiDownloadFromAPI/output/roi_from_url/
