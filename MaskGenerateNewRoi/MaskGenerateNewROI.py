@@ -11,11 +11,12 @@ class MaskGenerateNewROI:
         self.frame_x = 360
         self.frame_y = 240
         self.pixel_threshold = pixel_threshold
-        self.input_path = './input/ref_roi'
-        self.output_path = './output'
-        self.roi_dest_path = self.output_path + '/mask_to_roi'
-        self.img_dest_path = self.output_path + '/img_result'
-        self.camera_list_file = './input/factory_list.json'
+        self.this_file_dir = os.path.dirname(os.path.abspath(__file__))
+        self.input_path = os.path.join(self.this_file_dir, 'input', 'ref_roi')
+        self.output_path = os.path.join(self.this_file_dir, 'output')
+        self.roi_dest_path = os.path.join(self.output_path, 'mask_to_roi')
+        self.img_dest_path = os.path.join(self.output_path, 'img_result')
+        self.camera_list_file = os.path.join(self.this_file_dir, 'input', 'factory_list.json')
 
         self.run_list = [] # 要跑的工廠與camera id ex: [['久發', '5071930202']]
         self.roi_file = {}
@@ -87,7 +88,8 @@ class MaskGenerateNewROI:
 
         self.get_run_list()
         for data in self.run_list:  # 一次跑一間工廠
-            with open(self.input_path+f'/{data[0]}-{data[1]}.json','r',encoding='utf-8') as f:
+            read_file_path = os.path.join(self.input_path, f'{data[0]}-{data[1]}.json')
+            with open(read_file_path,'r',encoding='utf-8') as f:
                 self.roi_file = json.load(f)
             self.set_frame_size()
             run_channel = self.roi_file.get('channel') # 要跑哪些channel
@@ -116,12 +118,13 @@ class MaskGenerateNewROI:
                     new_frame_add_border=cv2.copyMakeBorder(new_frame,10,10,10,10,cv2.BORDER_CONSTANT,value=128)
                     combined_image = cv2.hconcat([area_mask_add_border, new_frame_add_border])
 
-                    cv2.imencode('.jpg', combined_image)[1].tofile(self.img_dest_path+ f'/{data[0]}-{data[1]}_channel{ch}.jpg')
+                    cv2.imencode('.jpg', combined_image)[1].tofile(os.path.join(self.img_dest_path, f'/{data[0]}-{data[1]}_channel{ch}.jpg'))
 
                 self.save_data = self.roi_file       # maintain roi file
                 self.save_data['roi_data'][f'channel{ch}'] = new_roi
 
-            with open(self.roi_dest_path+f'/{data[0]}-{data[1]}.json','w',encoding='utf-8') as fp:
+            write_file_path = os.path.join(self.roi_dest_path, f'/{data[0]}-{data[1]}.json')
+            with open(write_file_path,'w',encoding='utf-8') as fp:
                 json.dump(self.save_data,fp)
 
         print(f"[MaskGenerateNewROI] done")
@@ -140,7 +143,6 @@ class MaskGenerateNewROI:
         # =======================================
         roi_file = {}
         run_channel = []
-        save_data = {"is_split": None, "channel": None, "roi_data": {"channel1": [], "channel2": [], "channel3": [], "channel": []}}
         pixel_threshold = 20
 
         def generate_roi_data_from_mask(inverted_mask):
