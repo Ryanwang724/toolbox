@@ -40,7 +40,7 @@ class RoiDownloader:
                     print(f"{num}. {info}:")
                     print(f"    {roi_file}\n")
                     with open(f'{self.output_path}/{info}.json', mode='w') as fp:
-                        json.dump(roi_file,fp)
+                        json.dump(roi_file,fp,indent=2)
 
     def execute(self):
         self.check_dir_exist()

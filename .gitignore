@@ -1,5 +1,6 @@
 **/__pycache__
 **/Thumbs.db
-RoiDisplay/input/roi_from_url/
+RoiDisplay/input/
 RoiDisplay/output/
-RoiDownloadFromAPI/output/roi_from_url/
+RoiDownloadFromAPI/output/
+StatisticCheckedEvent/output/
