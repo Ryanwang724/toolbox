@@ -16,6 +16,9 @@
 ## PlayEventVideo
 - 人工複判判讀結果，會輸出0或1的csv。
 
+## ReCheckEvent
+- 確認人工複判為冷媒的真實時間點。
+
 ## StatisticCheckedEvent
 - 將`PlayEventVideo`的輸出結果放到`input`，會產生結果csv和折線圖。
 
