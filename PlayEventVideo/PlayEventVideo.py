@@ -16,7 +16,7 @@ class PlayEventVideo:
 
         self.buffer_length = int(self.SEC * self.FPS)
 
-        self.file_name = self.file_info_dict['factory_name'] + '-' + self.file_info_dict['camera_id'] + '-' + re.split(r'/|\.', self.csv_input_path)[-2] + '_checked.csv'
+        self.file_name = self.file_info_dict['factory_name'] + '-' + self.file_info_dict['camera_id'] + '-' + re.split(r'[\\/|\.]', self.csv_input_path)[-2] + '_checked.csv'
 
     def _read_csv_data(self):
         if os.path.isfile(self.csv_input_path):
