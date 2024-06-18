@@ -6,6 +6,7 @@ import matplotlib
 # matplotlib.use('tkagg')
 matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
+import itertools
 
 # 查系統字型
 # import matplotlib.font_manager as fm
@@ -83,9 +84,14 @@ class StatisticCheckedEvent:
 
         x = [_ for _ in range(1, 14)]
 
+        # Define a color cycle to avoid color repetition
+        colors = plt.cm.get_cmap('tab20', len(data))
+        color_cycle = itertools.cycle(colors.colors)
+
         for key, event_list in data.items():
             # print(event_list)
-            plt.plot(x,event_list, label=key)
+            color = next(color_cycle)
+            plt.plot(x,event_list, label=key, color=color)
 
         plt.xticks(ticks=x, labels=time)
         plt.xlabel('Time')
