@@ -100,7 +100,7 @@ class StatisticCheckedEvent:
         plt.legend()
         # plt.show()
         path = os.path.join(self.this_file_path, 'output', 'result.png')
-        plt.savefig(path)
+        plt.savefig(path, transparent=True)
     
     def _remove_output_csv(self):
         file = os.path.join(self.csv_output_path, self.output_file_name)
