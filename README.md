@@ -22,6 +22,15 @@
 ## StatisticCheckedEvent
 - 將`PlayEventVideo`的輸出結果放到`input`，會產生結果csv和折線圖。
 
+## ProcessVideoFrameFalse
+- 確認影片讀取失敗之原因並修復。
+
+## VideoClipper
+- 根據事件時間點對影片進行剪輯。
+
+## VideoDownloader
+- 至傑明網站下載對應事件之影片。
+
 ## factory_list.json
 - 最新之冷媒鏡頭名單，可將此檔複製進各專案之`input`。
 
